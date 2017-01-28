@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+        <title>Lolem ipsum</title>
+        <body>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Lolem ipsum</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" placeholder="Password"
+                                       </div>
+                                <button class="btn btn-custom" type="submit">Sign in</button>
+                                </form>
+                    </div>
+                </div>
+            </nav>
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1>Welcome!</h1>
+                        <p>We use bootstrap3 and show you good design</p>
+                        <p>
+                            <a class="btn btn-custom" role="button" href="#">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+        </body>
+    </head>
+</html>
