@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 mongoose.connect(process.env.MONGO_DB);
 var db = mongoose.connection;
 db.once("open",function() {
-    console.log("DB Connected!");
+    console.log("DB연결성공!");
 });
 db.on("error",function (err) {
     console.log("DB ERROR :", err);
@@ -24,6 +24,9 @@ var postSchema = mongoose.Schema({
 var Post = mongoose.model('post',postSchema);
 // view setting
 app.set("view engine", 'ejs')
+// set middlewares
+app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.json());
 // set routes
 app.get('/posts', function(req,res){
   Post.find({}, function (err,posts) {
@@ -56,10 +59,8 @@ app.delete('/posts/:id', function(req,res){
     res.json({success:true, message:post._id+" deleted"});
   });
 });
-// set middlewares
-app.use(express.static(__dirname + '/public'));
-app.use(bodyParser.json());
+
 // start server
 app.listen(3000, function(){
-    console.log('Server on!');
+    console.log('서버 부팅완료!');
 });
