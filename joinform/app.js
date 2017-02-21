@@ -4,22 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
 var index = require('./routes/index');
 var users = require('./routes/users');
-var join = require('./routes/joinForm');
+var join = require('./routes/joinForm')
+
 var app = express();
-var mongoose = require('mongoose');
-
-// connect database
-
-mongoose.connect(process.env.MONGO_DB);
-var db = mongoose.connection;
-db.once("open", function () {
-    console.log("DB연결성공!");
-});
-db.on("error", function (err) {
-    console.log("DB ERROR :", err);
-});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

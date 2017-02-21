@@ -1,16 +1,7 @@
 var express = require('express');
 var router = express.Router();
-
-// connect database
-
-mongoose.connect(process.env.MONGO_DB);
-var db = mongoose.connection;
-db.once("open", function () {
-    console.log("DB연결성공!");
-});
-db.on("error", function (err) {
-    console.log("DB ERROR :", err);
-});
+var mongoose = require('mongoose');
+var app = express();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -23,3 +14,4 @@ router.post('/',function(req,res,next){
 });
 
 module.exports = router;
+module.exports = app;
