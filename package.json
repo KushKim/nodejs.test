@@ -4,12 +4,17 @@
   "description": "",
   "main": "mainpage.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KushKim/nodejs.test.git"
   },
+    "dependencies": {
+        "mongoose":"*",
+        "ejs":"*",
+        
+    }
   "author": "",
   "license": "ISC",
   "bugs": {
