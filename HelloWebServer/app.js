@@ -8,7 +8,7 @@ var posts = require('./api/posts');
 var port = process.env.port || 8080;
 
 // DB CONNECT
-mongoose.connect(process.env.MONGO_DB);
+/*mongoose.connect(process.env.MONGO_DB);
 var db = mongoose.connection;
 
 db.once("open", function() {
@@ -17,7 +17,7 @@ db.once("open", function() {
 db.on("error", function (err) {
     console.log("DB ERROR :", err);
 });
-
+*/
 
 
 // view setting
