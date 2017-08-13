@@ -15,7 +15,7 @@
 </script>
 <title color="black">KushKim Sample Web</title>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
       <a class="navbar-brand" href="#">Brand</a>
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Link</a></li>
@@ -41,7 +41,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Link</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
+    </div><!-- /.navbar-collapse --> 
   </div><!-- /.container-fluid -->
 </nav>
   	<div class="container">
@@ -49,6 +49,7 @@
     </div>
 <div class="jumbotron">
 	<div class="container">
+        <image url = "\public\images"></image>
         <font color="red"><h1>lolem ipsum!</h1></font>
 		<p>Bootstrap remasterd</p>
 		<p>
@@ -56,6 +57,16 @@
 		</p>
 	</div>
 </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 align="middle" class="panel-title">
+            Panel title
+            </h3>
+        </div>
+        <div class="panel-body" align="middle">
+        Panel content
+        </div>
+    </div>
     <p align="middle">
  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303691354&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
     </p>
@@ -64,7 +75,16 @@
         8Bit FSCK by Beatmin
         </font>
     </div>
-    <div>
+    <!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://youtu.be/dDrZYNMrnFE"></iframe>
+</div>
+
+<!-- 4:3 aspect ratio -->
+<div class="embed-responsive embed-responsive-4by3">
+  <video class="embed-responsive-item" src="https://youtu.be/dDrZYNMrnFE"></iframe>
+</div>
+        <div>
         <address>
             <strong>KushKim Design</strong><br>
             102-1404, 36, Yeonsung-ro 13beon-gil, <br>Siheung-si, Gyeonggi-do, Repulic of Korea<br>
